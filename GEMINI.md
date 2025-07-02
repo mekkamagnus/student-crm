@@ -3,6 +3,8 @@
 - Future Goal: To build a custom WeChat miniapp to support online education (online/offline classes, live/recorded) for students.
 
 ## General Instructions
+- This application is being developed with GEMINI CLI.
+- The `ai_docs` directory contains information useful to the AI coding assistant, including aggregated GEMINI CLI documentation in `ai_docs/gemini_cli_docs.md`.
 - Every time you choose to apply a rule(s), explicitly state the rule(s) in the output. You can abbreviate the 
   rule description to a single word or phrase
 - Always follow a Test-Driven Development workflow.
@@ -50,6 +52,7 @@
 - Use 'deno test' for testing.
 - All unit and integration tests should be placed directly in the `test` directory.
 - All API endpoints should have test
+- Tests should be written for each function.
 - Aim for high test coverage, especially for core logic.
 - Tests should be isolated and repeatable.
 - Use clear and descriptive names for test files and test cases.
