@@ -25,6 +25,6 @@ const handler = async (req: Request): Promise<Response> => {
   return new Response("Not Found", { status: 404 });
 };
 
-const port = 8000;
+const port = parseInt(Deno.env.get("PORT") || "8000");
 console.log(`Server running on http://localhost:${port}/`);
 serve(handler, { port });
