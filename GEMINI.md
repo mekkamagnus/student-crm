@@ -24,12 +24,12 @@
 - Favor function composition: Utilize higher-order functions like `map` and `flatMap` (or `chain`) for composing operations, especially when dealing with `Either` types, to build complex logic from simpler, reusable functions.
 
 ## Task Management
-- The purpose of `TODO.md` is to manage and display the progress of implementing the given spec.
-- When a feature from `TODO.md` is implemented and verified, update its status in `TODO.md` to `[x]`.
-- TODO.md tasks are marked complete ([x]) only after code is implemented and successfully verified through testing.
-- During implementation, `TODO.md` should be updated in real time for proper tracking
-- Test should be created before code
-- When implementing from a spec, use `TODO.md` to show and manage the plan.
+- All tasks will be managed using GitHub Issues.
+- Code changes will be submitted via Pull Requests.
+- The `TODO.md` file will serve as a high-level overview of the project's progress, with individual tasks detailed in GitHub Issues.
+- When a feature is implemented and verified, its corresponding GitHub Issue will be closed.
+- Test should be created before code.
+- When implementing from a spec, use GitHub Issues to show and manage the plan.
 
 ## Tech Stack
 - **Backend Language:** TypeScript

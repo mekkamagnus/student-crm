@@ -1,7 +1,7 @@
 # TODO: Student CRM MVP - Phase 1
 
 ## Core Infrastructure
-- [ ] Set up Deno project and basic HTTP server (`main.ts`, `deno.json`)
+- [ ] Set up Deno project and basic HTTP server (`main.ts`, `deno.json`) (Next)
 - [ ] Initialize SQLite database connection and define schema (`database.ts`)
 - [ ] Integrate Handlebars templating engine
 
