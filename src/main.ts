@@ -29,7 +29,7 @@ const handler = async (req: Request): Promise<Response> => {
   return new Response("Not Found", { status: 404 });
 };
 
-const port = parseInt(Deno.env.get("PORT") || "8000");
+const port = parseInt(Deno.env.get("PORT") || "3500");
 console.log(`Attempting to start server on port: ${port}`);
 console.log(`Server running on http://localhost:${port}/`);
 serve(handler, { port });
