@@ -1,4 +1,8 @@
 import { serve } from "std/http/server.ts";
+import { loadSync } from "std/dotenv/mod.ts";
+
+// Load environment variables from .env file
+loadSync();
 import { tryCatch, isLeft, FileError } from "./utils/either.ts";
 
 const HTML_FILE_PATH = "./public/index.html";

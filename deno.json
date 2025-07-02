@@ -12,6 +12,7 @@
   "imports": {
     "@/": "./src/",
     "std/": "https://deno.land/std@0.224.0/",
+    "dotenv/": "https://deno.land/std@0.224.0/dotenv/",
     "sqlite/": "https://deno.land/x/sqlite@v3.8.0/mod.ts/",
     "handlebars/": "https://deno.land/x/handlebars@v1.0.0/mod.ts/"
   }
