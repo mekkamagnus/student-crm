@@ -30,5 +30,6 @@ const handler = async (req: Request): Promise<Response> => {
 };
 
 const port = parseInt(Deno.env.get("PORT") || "8000");
+console.log(`Attempting to start server on port: ${port}`);
 console.log(`Server running on http://localhost:${port}/`);
 serve(handler, { port });
