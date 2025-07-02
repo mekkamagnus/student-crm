@@ -2,7 +2,9 @@ import { serve } from "std/http/server.ts";
 import { loadSync } from "std/dotenv/mod.ts";
 
 // Load environment variables from .env file
+console.log("PORT before loadSync:", Deno.env.get("PORT"));
 loadSync();
+console.log("PORT after loadSync:", Deno.env.get("PORT"));
 import { tryCatch, isLeft, FileError } from "./utils/either.ts";
 
 const HTML_FILE_PATH = "./public/index.html";
