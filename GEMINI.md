@@ -1,3 +1,7 @@
+## Project Context
+- The CSV data for this project originates from an iWo WeChat miniapp, which serves as a backend for managing student/member activities in a dance studio.
+- Future Goal: To build a custom WeChat miniapp to support online education (online/offline classes, live/recorded) for students.
+
 ## General Instructions
 - Every time you choose to apply a rule(s), explicitly state the rule(s) in the output. You can abbreviate the 
   rule description to a single word or phrase
@@ -24,6 +28,22 @@
 - During implementation, `TODO.md` should be updated in real time for proper tracking
 - Test should be created before code
 - When implementing from a spec, use `TODO.md` to show and manage the plan.
+
+## Tech Stack
+- **Backend Language:** TypeScript
+- **Frontend Interactivity:** HTMX
+- **Styling:** Tailwind CSS (CDN)
+- **Database:** SQLite
+- **Templating Engine:** Handlebars
+- **Client-side Interactivity (sparse):** Alpine.js (to be infused much later in the development process)
+
+### Deno Routing
+- For routing, popular choices include Oak, Hono, and Opine. Hono is a strong candidate for its performance and lightweight nature. **Note: Routing will be implemented later and is not part of the initial MVP phase.**
+
+## Deployment Considerations (Mainland China)
+- The application will be primarily used and hosted in Mainland China.
+- Considerations for China's Firewall: Prioritize local downloads for CDNs where possible to mitigate firewall issues.
+- Configuration Management: Utilize `.env` files and clear separation of configurations for development vs. production environments.
 
 ## Testing
 - Always follow a Test-Driven Development workflow. Create and run test before code implementation.

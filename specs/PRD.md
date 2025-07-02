@@ -2,7 +2,7 @@
 
 ## 1. Introduction
 
-This document outlines the product requirements for a new Student/Member CRM application for a dance studio. The primary goal is to replace the manual tracking of member activity (currently in a CSV file) with a robust system that allows studio staff to manage members, their memberships, and their activity history efficiently.
+This document outlines the product requirements for a new Student/Member CRM application for a dance studio. The primary goal for this Minimum Viable Product (MVP) is to replace the manual tracking of member activity (currently in a CSV file) by focusing on robust CSV parsing and displaying this information in an interactive dashboard. This application will be a single-page Progressive Web Application (PWA) to allow studio staff to efficiently view member data.
 
 ## 2. User Personas
 
@@ -13,11 +13,12 @@ This document outlines the product requirements for a new Student/Member CRM app
 
 ### As a Studio Manager, I want to...
 
-*   ...view a member's complete history, including all their past payments and class package changes, so I can resolve any billing disputes or answer their questions accurately.
-*   ...be able to look up a member quickly by their name or phone number to see their current membership status.
-*   ...easily sell a new membership package to a new or existing student.
-*   ...edit a member's existing package (e.g., add classes, extend the expiration date) and log the reason for the change.
-*   ...see a list of all membership activities that have occurred on a given day to reconcile daily sales.
+*   ...**upload a CSV file** containing member activity data, so that the system can process and store it.
+*   ...**view a list of all members** in the system, so I can quickly see who is registered.
+*   ...**search for a member by name or phone number**, so I can quickly find their profile.
+*   ...**view a member's detailed profile**, including their contact information and current membership status, so I have a complete overview.
+*   ...**see a member's complete history of membership activities** (purchases, activations, edits, deletions), so I can understand their past interactions and resolve any inquiries.
+*   ...**view a list of all membership activities that occurred on a specific day**, so I can reconcile daily sales and operations.
 
 ## 4. Functional Requirements
 
@@ -40,3 +41,8 @@ This document outlines the product requirements for a new Student/Member CRM app
 - A monthly membership automatically activates on the date of the first class attended.
 - A class package (e.g., "20-class pack") is activated upon purchase or on a specified start date.
 - All financial transactions, including purchases and refunds, must be recorded with the corresponding amount.
+
+## 6. Data Import
+
+- The system must provide a mechanism to import member activity from the existing iWo-generated CSV file.
+- The import process must be idempotent, meaning that re-importing the same CSV file will not create duplicate records. The system should intelligently handle overlapping data between imports.
