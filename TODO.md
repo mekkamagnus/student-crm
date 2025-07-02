@@ -2,7 +2,7 @@
 
 ## Core Infrastructure
 - [x] Set up Deno project and basic HTTP server (`main.ts`, `deno.json`) #1
-- [ ] Initialize SQLite database connection and define schema (`database.ts`) #2
+- [x] Initialize SQLite database connection and define schema (`database.ts`) #2
 - [ ] Integrate Handlebars templating engine #3
 
 ## Feature: CSV Data Import
